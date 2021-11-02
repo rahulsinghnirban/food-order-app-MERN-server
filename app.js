@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.use(cors(
     {
-        origin: ['http://localhost:3000'],
+        origin: ['http://localhost:3000' ,'https://hungry-jones-2e3e89.netlify.app'],
         credentials: true
     },
 ));
