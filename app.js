@@ -5,7 +5,7 @@ const seedDB = require('./seed');
 const cors = require('cors');
 
 
-mongoose.connect(process.env.MONGO_URL || 'mongodb+srv://rahulsinghnirban007:neymar07@cluster0.sp7oz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority' )
+mongoose.connect(process.env.MONGO_URL)
 .then(()=>{
     console.log('DB Connected')
 })
