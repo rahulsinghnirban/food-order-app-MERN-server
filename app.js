@@ -5,7 +5,7 @@ const seedDB = require('./seed');
 const cors = require('cors');
 
 
-mongoose.connect(process.env.MONGO_URL)
+mongoose.connect(process.env.MONGO_URL || 'mongodb+srv://rahulsinghnirban007:neymar07@cluster0.sp7oz.mongodb.net/myFirstDatabase?retryWrites=true&w=majority' )
 .then(()=>{
     console.log('DB Connected')
 })
@@ -48,7 +48,7 @@ app.use(foodRoutes);
 
 
 
-const port = process.env.port || 8000;
+const port = process.env.PORT || 8000;
 
 
 app.listen(port, ()=>{
