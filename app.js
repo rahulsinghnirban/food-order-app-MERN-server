@@ -14,7 +14,7 @@ mongoose.connect(process.env.MONGO_URL || 'mongodb+srv://rahulsinghnirban007:ney
 });
 
 
-seedDB();
+// seedDB();
 app.use(express.json());
 
 app.use(cors(
